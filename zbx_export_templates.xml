@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>6.0</version>
-    <date>2022-04-24T15:00:14Z</date>
+    <date>2022-04-24T15:18:35Z</date>
     <groups>
         <group>
             <uuid>0e60ac85bc3941e2a1d66a048ff164da</uuid>
@@ -225,10 +225,9 @@
                             <trigger_prototypes>
                                 <trigger_prototype>
                                     <uuid>7f6cc36aed644a3cb82eaa55b961ad23</uuid>
-                                    <expression>last(/UPS/upsmon[{#UPSNAME},ups.temperature])&gt;28</expression>
+                                    <expression>last(/UPS/upsmon[{#UPSNAME},ups.temperature])&gt;36</expression>
                                     <name>UPS {#UPSNAME} Temperature</name>
                                     <priority>HIGH</priority>
-                                    <type>MULTIPLE</type>
                                 </trigger_prototype>
                             </trigger_prototypes>
                         </item_prototype>
